@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy Project &apos;Department-Service&apos;" description="Copy Project &apos;Department-Service&apos;" destination="D:/SpringBoot-Microservices" element="/Department-Service" flags="7" id="org.eclipse.ltk.core.refactoring.copyproject.resource" name="Employee-Service" stamp="1752731614400"/>
+</session>

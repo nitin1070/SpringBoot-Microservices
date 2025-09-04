@@ -1,0 +1,14 @@
+1752731633168	Rename package 'in.main.departmentservice'
+1752731782672	Delete element
+1752731892301	Rename type 'DepartmentReposistory'
+1752731947997	Delete element
+1752732002287	Rename type 'DepartmentService'
+1752732294254	Rename type 'DepartmentController'
+1752732333352	Rename package 'in.main.departmentservice.controller'
+1752732356446	Rename package 'in.main.departmentservice.dto'
+1752732369959	Rename package 'in.main.departmentservice.entity'
+1752732389515	Rename package 'in.main.departmentservice.reposistory'
+1752732408713	Rename package 'in.main.departmentservice.service'
+1752732426460	Rename type 'DepartmentServiceApplication'
+1752733603049	Delete element
+1752756178166	Delete element
