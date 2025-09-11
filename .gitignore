@@ -1,3 +1,5 @@
-/.metadata/**/*.jar
+/.metadata/
+**/zipkin-server-*.jar
+
 
 
