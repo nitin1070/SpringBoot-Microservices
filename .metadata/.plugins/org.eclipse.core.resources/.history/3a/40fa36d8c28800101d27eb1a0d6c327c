@@ -1,5 +1,0 @@
-package in.main.employeeservice.service;
-
-public interface APIClient {
-
-}

@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<section name="java.lang.Class">
 		<list key="findhistory">
+			<item value="spring-cloud-config-server"/>
 			<item value="departmentCode"/>
 		</list>
 	</section>
