@@ -1,0 +1,3 @@
+spring.cloud.config.uri=http://Config-Server:8080
+
+

@@ -1,0 +1,2 @@
+spring.application.name=11-Config-Server
+spring.cloud.config.server.git.uri=https://github.com/nitin1070/Config-Server-Properties.git

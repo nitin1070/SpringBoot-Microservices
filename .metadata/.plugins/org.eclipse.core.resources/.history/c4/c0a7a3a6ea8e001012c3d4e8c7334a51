@@ -1,0 +1,4 @@
+spring.sendgrid.api-key=Employee-Service
+spring.cloud.config.uri=http://Config-Server:8080
+
+
