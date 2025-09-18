@@ -1,0 +1,40 @@
+package in.main.employeeservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import in.main.employeeservice.dto.APIResponseDto;
+import in.main.employeeservice.dto.EmployeeDto;
+import in.main.employeeservice.service.EmployeeService;
+
+@RefreshScope
+@RestController
+@RequestMapping("api/employees")
+public class EmployeeController {
+	@Autowired
+	private EmployeeService eServ;
+	@Value("${emp.message}")
+	private String message;
+	@PostMapping
+	public ResponseEntity<EmployeeDto> saveEmployee(@RequestBody EmployeeDto employeeDto){
+	EmployeeDto savedEmployee = eServ.saveEmployee(employeeDto);
+	return new ResponseEntity<>(savedEmployee, HttpStatus.CREATED);
+	  }
+	
+	@GetMapping("Employee/{id}")
+	public ResponseEntity<APIResponseDto>getEmployee(@PathVariable("id") Long employeeId){
+		APIResponseDto apiResponseDto = eServ.getEmployeeById(employeeId);
+		String name=apiResponseDto.getEmployeeDto().getFirstName();
+		apiResponseDto.getEmployeeDto().setFirstName(name+"emp-message:"+message);
+		return new ResponseEntity<>(apiResponseDto, HttpStatus.OK);
+	}
+
+}
