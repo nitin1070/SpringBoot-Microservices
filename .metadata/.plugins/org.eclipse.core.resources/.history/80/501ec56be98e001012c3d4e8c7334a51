@@ -1,2 +1,0 @@
-spring.application.name=Department-Service
-spring.cloud.config.uri=http://Config-Server:8080

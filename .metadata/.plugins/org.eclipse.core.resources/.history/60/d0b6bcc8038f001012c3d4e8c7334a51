@@ -1,7 +1,0 @@
-spring.application.name=API-Gateway
-server.port=9000
-eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
-
-# this will auto create routing on the basis of service name 
-spring.cloud.gateway.server.webflux.discovery.locator.enabled=true
-spring.cloud.gateway.server.webflux.discovery.locator.lower-case-service-id=true
